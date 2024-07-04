@@ -7,8 +7,7 @@ Developed by BCS under its Summer Project - Lluminating Language
 The app is still in the prototyping stage, so before running, create a separate virtual environment to avoid conflicts.
 
 
-```
-
+```python
 conda create -n ChatIITK python=3.10.0
 conda activate ChatIITK
 ```
@@ -16,7 +15,6 @@ conda activate ChatIITK
 After successfully creating a virtual environment, install all the requirements for the project:
 
 ```
-
 pip install -r requirements.txt
 ```
 
@@ -27,7 +25,6 @@ Before starting inference, we need to ingest our data into our VectorDB (`Chroma
 You can change the device type to CPU or MPS if you don't have access to a GPU. By default, it will run on the best available compute (MPS or GPU); otherwise, it will use the CPU:
 
 ```
-
 python ingest.py --device_type cuda
 ```
 After the ingestion of data is complete, you can see local VectorDB files in the DB folder. Now: 
@@ -46,7 +43,6 @@ After the ingestion of data is complete, you can see local VectorDB files in the
 - To start the Streamlit UI, run:
 
 ```
-
 streamlit run ChatIITK_UI.py
 ```
 
@@ -62,7 +58,6 @@ streamlit run ChatIITK_UI.py
  
 1. **Run the Ingestion Script** : Use the `ingest.py` script to ingest data into the `ChromaDB` vector database. This script processes raw data and stores it in a structured format, making it ready for retrieval during inference.
 ```
-
 python ingest.py --device_type cuda
 ```
  
@@ -75,7 +70,6 @@ python ingest.py --device_type cuda
  
 1. **Terminal Interface** : To start the terminal interface, use:
 ```
-
 python run_ChatIITK.py
 ```
 
@@ -85,7 +79,6 @@ Customize the behavior with various command-line flags for device type selection
  
 2. **Streamlit UI** : For a web interface, run:
 ```
-
 streamlit run ChatIITK_UI.py
 ```
  
