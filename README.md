@@ -7,7 +7,7 @@ Developed by BCS under its Summer Project - Lluminating Language
 The app is still in the prototyping stage, so before running, create a separate virtual environment to avoid conflicts.
 
 
-```python
+```
 conda create -n ChatIITK python=3.10.0
 conda activate ChatIITK
 ```
